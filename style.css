@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: auto;
+}
+
+.container {
+  text-align: center;
+  margin: 50px auto;
+  width: aut;
+}
+
+.game-area {
+  position: relative;
+}
+
+#coin-image {
+  width: 100px;
+  cursor: pointer;
+}
+
+#score,
+#level {
+  margin-top: 20px;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.pop-animation {
+  animation: pop 0.3s ease-in-out;
+}
+
